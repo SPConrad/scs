@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>SCS Mobile Redesign Test</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container" id="main-container">
-	<div class="row" id="hero-banner">
+<div class="container banner-container" id="banner-container">
+	<div class="row banner" id="banner">
 		<div class="col-xs-2 col-md-2" id="hamburger">
-			<button class="btn btn-default" type="button">
+			<button class="btn btn-default" type="button" data-toggle="collapse" data-target=".navMenu">
 			    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 			</button>
 		</div>
-		<div class="col-xs-8 col-md-8" id="logo">
+		<div class="col-xs-8 col-md-8 logo" id="logo">
 			<img src="images/logo-light.png" alt="SCS Direct">
 		</div>
 		<div class="col-xs-2 col-md-2" id="cart">
@@ -24,10 +24,32 @@
 	<div class="row" id="search-bar">
 		<input class="col-xs-12 col-md-12" type="text" name="search-field" placeholder="What are you looking for?">
 	</div>
+	<div class="collapse navMenu" id="navMenu">
+		<ul class="container-fluid">
+			<li class="nav-bar-item">
+				<span>Store</span>
+			</li>
+			<li class="nav-bar-item">
+				<span>Our Brands</span>
+			</li>
+			<li class="nav-bar-item">
+				<span>Replacement Parts</span>
+			</li>
+			<li class="nav-bar-item">
+				<span>Customer Service</span>
+			</li>
+			<li class="nav-bar-item">
+				<span>My Account</span>
+			</li>
+			<li class="nav-bar-item">
+				<span>About Us</span>
+			</li>
+		</ul>
+	</div>
 </div>
 
 <div class="container" id="featured-offer-container">
-	<div class="row" id="featured-offer">
+	<div class="row featured-offer" id="featured-offer">
 		<span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
 		<span class="featured-offer-text" id="featured-offer-text">
 			Free shipping on U.S. orders over $25! | 
@@ -41,39 +63,33 @@
 
 <div class="container featured-items" id="featured-items">
 	<div class="row">
-		<div class="col-sm-8" id="featured-item">
-			<div class="row">
+		<div class="col-sm-8 featured-item" id="featured-item">
 				<a href="#">
 					<img class="aligncenter size-full img-responsive" src="images/featured.png" alt="The Versa Coffee Press by Kuissential">
 				</a>
-			</div>
 		</div>
 
-		<div class="col-sm-4 Array">
-			<div class="row" id="sub-img">
+		<div class="col-sm-4 featured-items-array Array">
+			<div class="featured-items-list sub-img" id="sub-img-1">
 				<img class="aligncenter size-full img-responsive" src="images/sub-image-1.jpg" alt="Good Housekeeping's 2016 Best Toy Awards">
 			</div>
 
-			<div class="row" id="sub-img">
+			<div class="featured-items-list  sub-img" id="sub-img-2">
 				<img class="aligncenter size-full img-responsive" src="images/sub-image-2.jpg" alt="bentology eating by design">
 			</div>
 
-			<div class="row" id="sub-img">
+			<div class="featured-items-list  sub-img" id="sub-img-3">
 				<img class="aligncenter size-full img-responsive" src="images/sub-image-3.jpg" alt="Hottest New Product as seen in Paradise Magazine">
 			</div>
 			<div class="row"></div>
-
 		</div>
-
 	</div>
-
 </div>
-
 
 <footer class="container" id="footer">
 	<div class="row office-info" id="office-info">	
 		<div class="row">
-			<img src="images/logo-light.png">
+			<img src="images/logo-light.png" alt="SCS Logo">
 		</div>
 		<div class="row contact-info">
 			<div class="row address">
@@ -92,14 +108,7 @@
 	<hr>
 </footer>
 
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-		
-		//navbar background color
-		// #08243c
-	</script>
 </body>
 </html>

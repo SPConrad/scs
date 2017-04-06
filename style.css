@@ -2,41 +2,59 @@
 	max-width: 100vw;
 }
 
-#main-container {
-	max-width: 100%;
+.container {
+	max-width: 100%;	
+	color: #ffffff;
+}
+
+.banner-container {
 	max-height: 10%;
 }
 
-#hero-banner {
-	color: #ffffff;
-	background-color: #08243c
+.banner {
+	padding: 0;
+	background-color: #08243c;
 }
 
-#logo {
+.navMenu {
+	background-color: #063d62;
+	transition: 0.5s;
+}
+
+.logo {
 	max-height: 100%;
 	max-width: 100%;
 }
 
-#featured-offer, #featured-offer a {	
+.featured-offer, .featured-offer a {	
 	font-size: 18px;
 	color: #ad0921;
 	text-align: center;
+	margin: 0;
 }
-
 .featured-offer-text {
 	text-transform: uppercase;
 }
 
+.featured-item {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.featured-items-array {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
 footer {
+	padding: 0;
+	color: #ffffff;
 	background: Url(/images/footer-bg.jpg);
 }
 
 .office-info {
 	text-align: center;
-}
-
-.contact-info {
-	color: #ffffff;
 }
 
 .address, .phone {
