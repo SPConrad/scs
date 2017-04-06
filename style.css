@@ -12,7 +12,7 @@
 }
 
 .banner {
-	padding: 0;
+	padding-left: 8px;
 	background-color: #08243c;
 }
 
@@ -21,9 +21,29 @@
 	transition: 0.5s;
 }
 
+.hamburger {
+	margin: auto;
+	padding-top: 8px;
+	font-size: 25px;
+}
+
+.cart {
+	padding-top: 8px;
+	font-size: 25px;
+}
+
 .logo {
 	max-height: 100%;
 	max-width: 100%;
+	text-align: center;
+}
+
+.top-phone{ 
+	text-align: right;
+}
+
+.top-phone a {
+	color: #ffffff;
 }
 
 .featured-offer, .featured-offer a {	
